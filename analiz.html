@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="UTF-8">
+        <title>HOOOP- Araç Kirala</title>
+        <meta name="description" content="HOOOP diye hızlı ve güvenli araba kiralyabileceğiniz Türkiyenin en güvenli araç kiralama sitesiyiz.">
+        <meta name="keywords" content="güvenli,hızlı,araç,kiralama,en iyisi">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script>
+    window.onload = function() {
+
+    var chart = new CanvasJS.Chart("chartContainer", {
+        animationEnabled: true,
+        title: {
+            text: "Araçların Gelir Pastasında Yüzdelik Dağılımı"
+        },
+        data: [{
+            type: "pie",
+            startAngle: 240,
+            yValueFormatString: "##0.00\"%\"",
+            indexLabel: "{label} {y}",
+            dataPoints: [
+                {y: 30, label: "Renault Clio "},
+                {y: 20, label: "Hyundai i20 "},
+                {y: 35, label: "Fiat Egea"},
+                {y: 15, label: "Peugeot 301"},
+                
+            ]
+        }]
+    });
+    chart.render();
+
+    var chart2 = new CanvasJS.Chart("chartContainer2", {
+	animationEnabled: true,
+	theme: "light2", // "light1", "light2", "dark1", "dark2"
+	title:{
+		text: "Şubelerin  Kiralama Performansı"
+	},
+	axisY: {
+		title: "Reserves(MMbbl)"
+	},
+	data: [{        
+		type: "column",  
+		showInLegend: true, 
+		legendMarkerColor: "grey",
+		legendText: "MMbbl = one million barrels",
+		dataPoints: [      
+			{ y: 450, label: "İzmir Gaziemir" },
+			{ y: 700,  label: "İzmir Alsancak" },
+			{ y: 560,  label: "İzmir Karşıyaka " }
+			
+		]
+	}]
+});
+    chart2.render();
+
+var chart3 = new CanvasJS.Chart("chartContainer3", {
+	animationEnabled: true,
+	theme: "light2",
+	title:{
+		text: "Mevsimlere Göre Araç Kiralanma Sayıları"
+	},
+	data: [{        
+		type: "line",
+      	indexLabelFontSize: 16,
+		dataPoints: [
+			{ y: 450 },
+			{ y: 414},
+			{ y: 520},
+			{ y: 460 },
+			{ y: 450 },
+			{ y: 500 },
+			{ y: 600, indexLabel: "\u2191 highest",markerColor: "red", markerType: "triangle"  },
+			{ y: 480 },
+			{ y: 410 },
+			{ y: 500 },
+			{ y: 480 },
+			{ y: 400 , indexLabel: "\u2193 lowest",markerColor: "DarkSlateGrey", markerType: "cross" }
+		]
+	}]
+});
+    chart3.render();
+
+
+    }
+
+           
+    </script>
+    
+    </head>
+
+    <body>
+        
+        <div id="sayfa"> 
+           
+            <header id="banner">
+                <div id="logo">
+                    <img src="hoop (2).jpg" alt="burada sitemeizin logosu yer almaktadır." title="HOOP ile araç kiralyın. HOOP diye rahata kavuşun." width="180" height="80">
+
+                </div>
+                <div id="giris">  
+                   <label id="giris-text"> Hoş Geldin Batuhan Özer</label>
+
+                </div>
+            </header>
+
+            <nav id="anamenu">
+                <ul>
+                    <li><a href="Anasayfa.html" >Ana Sayfa</a></li>
+                    <li><a href="sube.html" >Şubeler</a></li>
+                    <li><a href="fiyatlar.html ">Fiyatlar</a></li>
+                    <li><a href="analiz.html" >Yönetici Sayfası</a></li>
+    
+
+                </ul>
+
+            </nav>
+
+            <article id="analiz">
+                <div id="grup1">
+                    <div id="chartContainer">  </div>
+                    <div id="chartContainer2">  </div>
+                </div>
+                <div id="grup2">
+                    <table id="arac-tablo" border="1">
+                        <caption> Aylık Araç Gelir Gider Tablosu</caption>
+                        <thead>
+                            <tr><th>Araç</th><th>Aylık Kiralanma Sayısı</th> <th>Gelir</th> <th>Gider</th></tr>
+            
+            
+                        </thead>
+                        <tbody>
+                            <tr><td>Renault Clio </td><td>81</td> <td>18.000TL</td> <td>2.500TL</td> </tr>
+                            <tr><td>Hyundai i20 </td><td>70</td> <td>5.000TL</td> <td>700TL</td> </tr>
+                            <tr><td>Fiat Egea </td><td>68</td>  <td>10.000TL</td> <td>1.500TL</td></tr>
+                            <tr><td>Peugeot 301 </td><td>85</td> <td>12.000TL</td> <td>1.200TL</td> </tr>
+                        </tbody>
+                    </table>
+
+
+                    <div id="chartContainer3" ></div>
+                </div>
+                
+                <div id="arac-ekle">
+                   <form id="aracc-ekle" > 
+                        <table>
+                            <h1>Araç Ekle Çıkar</h1> 
+                            <tbody>
+                                <tr><td> Araç Adı:   </td><td><input type="text" name="ad" maxlength="25" ></td> </tr>
+                                <tr><td> Vites:  </td><td><input type="text" name="Vites" maxlength="25"></td> </tr>
+                                <tr><td> Model Yılı:  </td><td><input type="text" name="yıl" maxlength="25"></td> </tr>
+                                <tr><td> Yakıt Türü:  </td><td><input type="text" name="Yakıt" maxlength="25"></td> </tr>
+                                <tr><td> Fiyat:   </td><td><input type="text" name="Fiyat" maxlength="25"></td> </tr>
+                            </tbody>
+                        </table>
+
+                    </form>
+                    <div id="sube-ekle">
+                        <form id="sube-ekle1"> 
+                            <table>
+                                <h1>Şube Ekle Çıkar</h1>
+                                <tr><td> Şube Adı:   </td><td><input type="text" name="ad" maxlength="25" ></td> </tr>
+                                <tr><td> Adres:  </td><td><input type="text" name="Vites" maxlength="25"></td> </tr>
+                                <tr><td> Telefon Numarası:  </td><td><input type="text" name="yıl" maxlength="25"></td> </tr>
+                                
+
+                            </table>
+
+                        </form>
+                </div>
+
+                </div>
+
+
+
+
+
+            </article>
+
+            <footer id="altmenu">
+            
+                <div class="footerbilgi">
+                    <img src="wp.png" width="25" height="25" id="iletisim" >
+                    <Label class="tel">  Tel:</Label>
+                    <label  class="tel2">2019469099   </label>
+                    <a href="www.linkedin.com/in/batuhanzer"> <img src="linkedin.png"  width="25" height="25" id="iletisim2"></a>
+                    <label  id="linkedin"> batuhanzer</label>
+                    <img src="instaa.png" title="Bize Sosyal Medyadan Ulaşın."  width="25" height="25" id="insta">
+                    <label  id="instaa"> HOOOP  </label>
+                    <img src="tw.png" title="Bize Sosyal Medyadan Ulaşın."  width="25" height="25" id="twitter">
+                    <label  id="Twitter"> HOOOPtr  </label>
+                </div>   
+            </footer>
+
+
+        </div>
+
+
+
+        
+    </body>
+
+</html>

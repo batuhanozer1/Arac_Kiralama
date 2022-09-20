@@ -1,0 +1,512 @@
+/* Araç Kiralama Sitesi için Oluşturulmuş CSS dosyası*/
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+#sayfa{
+    
+    width: 1250px;
+    min-height: 1600px;
+    margin: auto;
+    border-style: solid;
+    border-width: 1px;
+}
+
+#banner{
+    width:1250px;;
+    height: 82px;
+    
+    margin: auto;
+    border-style: solid;
+    border-width: 1px;
+    background-color:#738591;
+}
+#logo{
+    width: 100px;
+  
+    
+    float: left;
+    border-style: solid;
+    border-width: 1px;
+    
+    position: relative;
+    top: 5px;
+    left: 10px;
+    border: 20px;
+}
+
+#giris{
+    width: 100px;
+    height: 40px;
+    margin-right: 20px;
+    position: relative;
+    top: 10px;
+    left: 15px;
+    float:right;
+
+}
+#tuslar{
+    height: 30px;
+    width: 50px;
+    float: right;
+    margin-right: 10px;
+    position: relative;
+    top: 3px;
+    right: 10px;
+    border-style:solid ;
+} 
+
+#giris-text{
+    height: 50px;
+    width: 100px;
+    float: right;
+    margin-right: 10px;
+    position: relative;
+    top: 3px;
+    right: 10px;
+    
+    
+    background-color: #d6cdc2;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#anamenu{
+    width: 1250px; ;
+    height: 50px;
+    min-height: 30px;
+    
+    border-style: solid;
+    border-width: 1px;
+    background-color:#d6cdc2;
+
+}
+
+
+#anamenu ul{
+    list-style: none;
+}
+
+#anamenu ul li{
+    width: 150px;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 10px;
+    border-color: coral;
+   
+    margin-right: 30px;
+    float: left;
+    padding: 5px;
+    margin-left: 5px;
+    position: relative;
+    left: 250px;
+    top: 8px;
+    text-align: center;
+
+}
+
+#anamenu ul a{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    font-size: auto;
+
+
+}
+
+#anamenu ul a:link{
+    color:#0b8367;
+}
+
+
+#anamenu ul a:visited{
+    color: white;
+
+}
+#anamenu ul a:hover{
+    color: greenyellow;
+    text-decoration: underline;
+}
+#sayfa{
+    background-image: url("resized_arabaa\ \(1\).jpg");
+    background-repeat:no-repeat;
+    background-size: cover;
+    
+}
+
+
+
+
+
+#altmenu{
+    position: absolute;
+    top: 1602px;
+    
+    
+    float: left;
+    width: 1250px;
+    height: 50px;
+   
+    background-color:#738591;
+}
+#iletisim{
+    position:absolute;
+    left: 150px;
+    top: 15px;
+
+
+}
+.tel{
+    position:absolute;
+    left: 180px;
+    top: 20px;
+}
+.tel2{
+    position:absolute;
+    left: 210px;
+    top: 20px;
+}
+#iletisim2{
+    position:absolute;
+    left: 400px;
+    top: 15px;
+}
+#linkedin{
+
+    position:absolute;
+    left: 435px;
+    top: 20px;
+}
+
+#insta{
+    position:absolute;
+    left: 575px;
+    top: 14px;
+}
+#instaa{
+    position:absolute;
+    left: 610px;
+    top: 20px;
+}
+
+#twitter{
+    position:absolute;
+    left: 770px;
+    top: 20px;
+}
+#Twitter{
+    position:absolute;
+    left: 805px;
+    top: 22px;
+}
+.footerbilgi{
+    position:absolute;
+    left: 100px;
+}
+
+
+#Tarihler .tarih{
+    position:relative ;
+    top: 110px;
+    left: 350px;
+    
+  height: 40px;
+  width: 200px;
+    margin: 20px;
+    
+    float: left;
+    font-size: 17px;
+    
+   
+}
+
+
+
+#tarihler-label label{
+    position:relative ;
+    top: 105px;
+    left: -340px;
+    
+    font-size: 30px;
+    
+    margin-left: 46px;
+    
+ 
+}
+
+#sube-label label{
+    position:relative ;
+    top: 505px;
+    left: 280px; 
+    font-size: 30px;
+    margin: 60px;
+    
+ 
+}
+
+#sube-secim .subelerr{
+    position: relative; 
+    display: block;
+    top: 550px;
+    
+    left: 320px;
+    float: left;
+    margin: 15px;
+    width: 300px;
+    font-size: 25px;
+}
+
+#bul{
+
+    position: relative;
+    top: 630px;
+    left: 230px;
+    height: 30px;
+    width: 75px;
+    background-color:#0b8367 ;
+    color: white;
+}
+
+
+
+
+#ortak div{
+    border-style: solid;
+    border-color: coral;
+    border-width: 1px;
+    width: 210px;
+    height: 120px;
+    float: left;
+    margin: 20px;
+    position: relative;
+    top: 900px;
+    left: -250px;
+    background-color:coral ;
+
+}
+
+#ortak div header{
+ 
+ border-style: solid;
+ border-color:#0b8367;
+ border-width: 10px;
+ background-color: #0b8367;
+ font: optional;
+ text-align: center;
+
+
+  font-size: 32px;
+}
+
+
+
+ #subeler div{
+    border-style: solid;
+    border-color: coral;
+    border-width: 1px;
+    width: 310px;
+    height: 210px;
+    float: left;
+    margin: 50px;
+    position: relative;
+    top: 400px;
+    left: 15px;
+    border-radius: 10px;
+    background-color: coral;
+
+}
+
+#subeler div header{
+ 
+ border-style: solid;
+ border-color:#0b8367;
+ border-width: 10px;
+ background-color: #0b8367;
+ font: optional;
+ text-align: center;
+ border-radius:10px;
+ 
+
+  font-size: 32px;
+}
+#subeler div article{
+    
+    font-size: 25px;
+    text-align:left;
+    border-radius: 10px;
+    height: 170px;
+}
+
+#fiyatlar div{
+    border-style: solid;
+    border-color: coral;
+    border-width: 1px;
+    
+    width: 400px;
+    height: 550px;
+    float: left;
+    margin: 50px;
+    position: relative;
+    top: 100px;
+    left: 110px;
+    border-radius: 10px;
+    color:#0b8367;
+
+    font-size: 29x;
+   
+}
+#fiyatlar div header{
+ 
+ border-style: solid;
+ border-color:#0b8367;
+ border-width: 10px;
+ background-color: #0b8367;
+ font: optional;
+ text-align: center;
+ border-radius:10px;
+ color: white;
+
+  font-size: 32px;
+}
+#fiyatlar div article{
+    
+    font-size: 25px;
+    text-align:left;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 30px;
+
+}
+#fiyatlar   #fiyat1{
+    background-image:url("clio_joy2_400x550.jpg");
+    background-repeat:no-repeat;
+   
+
+
+}
+#fiyatlar   #fiyat2{
+    background-image:url("i20_5_400x550.jpg");
+    background-repeat:no-repeat;
+   
+    
+
+
+}
+#fiyatlar   #fiyat3{
+    background-image:url("egea1_400x550.jpg");
+    background-repeat:no-repeat;
+   
+    
+
+
+}
+#fiyatlar   #fiyat4{
+    background-image:url("301_3_400x550.jpg");
+    background-repeat:no-repeat;
+   
+    align-items: center;
+   justify-content: center;
+ 
+    
+
+
+}
+#fiyatlar div article{
+    margin-top: 10px;
+
+}
+
+
+#chartContainer{
+    width: 450px;
+    height: 300px;
+    
+    
+   
+    
+    
+    
+}
+
+#chartContainer2{
+    width: 450px;
+    height: 300px; 
+
+}
+
+#grup1 div{
+
+    position:relative;
+    top: 5px;
+    float: left;
+    margin:50px;
+    left: 0px;
+}
+
+#arac-tablo{
+    border-style: solid;
+    border-color: coral;
+    border-width: 2px;
+    width: 450px;
+    height: 150px;
+    position: relative;
+    top: 50px;
+    left: 100px;
+    background-color:#d6cdc2 ;
+}
+
+
+#chartContainer3{
+    width: 450px;
+    height: 200px;
+    position: relative;
+    top: -120px;
+    left: 650px;
+
+}
+#arac-ekle{
+    border-style: solid;
+    border-color: coral;
+    border-width: 2px;
+    width: 450px;
+    height: 180px;
+    position: relative;
+    left: 100px;
+    background-color:#d6cdc2  ;
+}
+#sube-ekle{
+    border-style: solid;
+    border-color: coral;
+    border-width: 2px;
+    width: 450px;
+    height: 150px;
+    position: relative;
+    left: 550px;
+    background-color:#d6cdc2  ;
+    top: -130px;
+
+}
+#aracc-ekle{
+   
+    position: relative;
+    left: 100px;
+    font-size: 20px;
+}
+#sube-ekle1{
+    
+    position: relative;
+    left: 100px;
+    font-size: 20px;
+    top: 20px;
+   
+}
+
+#ortaklarimiz{
+    position: relative;
+    left: -240px;
+    font-size: 50px;
+    top: 900px;
+    color:#d6cdc2;
+}
